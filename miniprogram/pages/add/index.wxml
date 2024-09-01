@@ -1,0 +1,71 @@
+<wxs module="util" src="../util.wxs" />
+<view class="container">
+  <view class="form-group">
+    <view class="form-cell">
+      <view class="form-cell_title">待办事项</view>
+      <input class="form-cell_input" placeholder="请输入待办事项（10字以内）" placeholder-class="form-cell_title-placeholder"
+        bindinput="onTitleInput" value="{{title}}" />
+    </view>
+    <view class="form-cell">
+      <view class="form-cell_title">详细描述</view>
+      <input class="form-cell_input" placeholder="请输入详细描述（100字以内）" placeholder-class="form-cell_title-placeholder"
+        bindinput="onDescInput" value="{{desc}}" />
+    </view>
+  </view>
+<view class="date">
+  <t-cell
+  title="截止时间"
+  hover
+  note="{{datetimeText}}"
+  arrow
+  data-mode="datetime"
+  bindtap="showPicker"
+  t-class="panel-item"
+/>
+<!-- 年月日时分 -->
+<t-date-time-picker
+  title="截止日期"
+  visible="{{datetimeVisible}}"
+  mode="second"
+  value="{{datetime}}"
+  format="YYYY-MM-DD HH:mm:ss"
+  bindchange="onConfirm"
+  bindpick="onColumnChange"
+  bindcancel="hidePicker"
+/>
+<t-cell class="mb-16" title="事件级别" arrow hover note="{{cityText}}" bind:click="onTitlePicker" />
+<t-picker
+  visible="{{cityVisible}}"
+  value="{{cityValue}}"
+  data-key="city"
+  title="{{cityTitle}}"
+  cancelBtn="取消"
+  confirmBtn="确认"
+  usingCustomNavbar
+  bindchange="onPickerChange"
+  bindpick="onColumnChange1"
+  bindcancel="onPickerCancel"
+>
+  <t-picker-item options="{{citys}}"></t-picker-item>
+</t-picker>
+<t-cell class="mb-16" title="事件类型" arrow hover note="{{leiText}}" bind:click="onTitlePicker2" />
+<t-picker
+  visible="{{leiVisible}}"
+  value="{{leiValue}}"
+  data-key="lei"
+  title="{{leiTitle}}"
+  cancelBtn="取消"
+  confirmBtn="确认"
+  usingCustomNavbar
+  bindchange="onPickerChange2"
+  bindpick="onColumnChange2"
+  bindcancel="onPickerCancel2"
+>
+  <t-picker-item options="{{leis}}"></t-picker-item>
+</t-picker>
+</view>
+  <view class="footer">
+    <view class="reset" bindtap="resetTodo">重置</view>
+    <view class="save" bindtap="saveTodo">保存</view>
+  </view>
+</view>

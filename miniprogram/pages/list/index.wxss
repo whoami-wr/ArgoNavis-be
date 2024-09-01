@@ -1,0 +1,147 @@
+/* miniprogram/pages/list/index.wxss */
+
+.bg{
+  width: 100%;
+  position:relative;
+}
+.ontitle{
+  position: absolute;
+  left: 30px;
+  top:30px;
+  font-size:30px;
+}
+
+.container.empty {
+  background: white;
+}
+
+.container:last-child {
+  margin-bottom: calc( var(--footer-height) + 24px );
+}
+
+.background {
+  width: 30vw;
+  margin-top: 30px;
+  position: relative;
+}
+
+.ontitle{
+  position:absolute;
+  border-left-width: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.title {
+  margin-top: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 9px;
+  font-size: 14px;
+}
+
+.form-cell {
+  padding: 0;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  align-self: flex-start;
+  transform: translateY(5px);
+}
+
+.todo-info {
+  width: auto;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column
+}
+
+.todo-info_title {
+  font-size: 17px;
+}
+
+.todo-info_desc {
+  font-size: 17px;
+  color: #BDBDBD;
+}
+
+.star {
+  width: 25px;
+  height: 36px;
+  position: absolute;
+  right: 42px;
+  top: 0;
+}
+
+.starBtn .weui-slideview__btn {
+  background-color: gold;
+}
+
+.file {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: 22px;
+}
+
+.todo-info_title.done {
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.dark {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #888888; 
+  border-radius: 20px;
+}
+
+.dark,
+.light {
+  color: rgb(0, 0, 0);
+  font-size: 38rpx;
+  line-height: 96rpx;
+  margin-bottom: 32rpx;
+  text-align:center;
+
+}
+
+.normal{
+  padding-top: 30rpx;
+  height: 175px;
+}
+
+.nofin{
+  height: 30px;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  background-color: rgb(145, 127, 248);
+  margin-top: 80rpx;
+  margin-left: 17rpx;
+}
+
+.infin{
+  height: 30px;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  background-color: rgb(149, 241, 218);
+  margin-top: 80rpx;
+  margin-left: 15rpx;
+}
+
+.plus{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}

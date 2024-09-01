@@ -1,0 +1,15 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "description": "这是使用云开发能力构建的待办事项小程序模板，其中演示了云开发三大基础能力的使用：",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tdesign-miniprogram": "^1.5.0"
+  }
+}

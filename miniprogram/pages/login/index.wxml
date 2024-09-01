@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="title">欢迎登录</view>
+  <view class="divLine"></view>
+  <view class="side">国际学院自律系统</view>
+  <view class="inputRow">
+    <View>学号:</View>
+    <t-input type="text" model:value="{{userName}}" placeholder="请输入学号" class="phone_number" clearable></t-input>
+  </view>
+  <!-- <view class="divLine"></view> -->
+  <view class="inputRow1">
+    <View>密码:</View>
+    <t-input type="password" model:value="{{userPass}}" placeholder="请输入密码" clearable class="phone_number"/>
+  </view>
+  <!-- <view class="divLine"></view> -->
+  <button class="buttonStyle" bindtap="login">登录</button>
+  <t-radio class="box" value="radio1" label="我同意《用户服务协议》及《隐私条例》" />
+  <view class="block"></view>
+</view>

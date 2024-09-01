@@ -1,0 +1,43 @@
+<wxs module="util" src="../util.wxs" />
+  <image class="bg" src="../../images/list/daiban.png" mode="widthFix"/>
+  <view class="ontitle">待办</view>
+    <t-row class="normal">
+      <t-col offset="2" span="9" t-class="dark" ><view>辅导员通知</view>
+      <t-row>
+        <t-col span="10" t-class="dark" class="nofin">未完成</t-col>
+        <t-col span="10" t-class="dark" class="infin">已完成</t-col>
+      </t-row>
+      </t-col>
+      <t-col offset="2" span="9" t-class="dark" >学习
+        <t-row>
+        <t-col span="10" t-class="dark" class="nofin">未完成</t-col>
+        <t-col span="10" t-class="dark" class="infin">已完成</t-col>
+      </t-row>
+      </t-col>
+    </t-row>
+    <t-row class="normal">
+      <t-col offset="2" span="9" t-class="dark" >运动
+        <t-row>
+        <t-col span="10" t-class="dark" class="nofin">未完成</t-col>
+        <t-col span="10" t-class="dark" class="infin">已完成</t-col>
+      </t-row>
+      </t-col>
+      <t-col offset="2" span="9" t-class="dark" >作业
+        <t-row>
+        <t-col span="10" t-class="dark" class="nofin">未完成</t-col>
+        <t-col span="10" t-class="dark" class="infin">已完成</t-col>
+      </t-row>
+      </t-col>
+    </t-row>
+    <t-row class="normal">
+      <t-col offset="2" span="9" t-class="dark" >其他
+        <t-row>
+        <t-col span="10" t-class="dark" class="nofin">未完成</t-col>
+        <t-col span="10" t-class="dark" class="infin">已完成</t-col>
+      </t-row>
+      </t-col>
+      <t-col offset="2" span="9" t-class="dark" >
+        <image src="../../images/list/plus.png" class="plus"></image>
+      </t-col>
+    </t-row>
+<footer></footer>
